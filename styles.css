@@ -1,0 +1,103 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tile {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #d3d6da; /* Default tile color */
+}
+
+.correct {
+    background-color: #6aaa64; /* Green for correct */
+}
+
+.present {
+    background-color: #c9b458; /* Yellow for present */
+}
+
+.absent {
+    background-color: #787c7e; /* Gray for absent */
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 35px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.key {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3d6da;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.key.correct {
+    background-color: #6aaa64;
+}
+
+.key.present {
+    background-color: #c9b458;
+}
+
+.key.absent {
+    background-color: #787c7e;
+}
+
+#message {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* styles.css */
+
+#restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #6aaa64;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+
+#restart-button:hover {
+    background-color: #5c9956;
+}
